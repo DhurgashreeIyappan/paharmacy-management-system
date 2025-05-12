@@ -1,0 +1,106 @@
+.hero-section {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  
+  h4 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  body {
+    background: url('../../../assets/images/bg1.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+  
+  .navbar {
+    background: rgba(95, 92, 92, 0.6);
+    padding: 10px;
+    font-size: 1.2rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  .nav-link {
+    color: white;
+    font-weight: bold;
+    margin-left: 15px;
+  }
+  
+  .nav-link:hover {
+    color: #f8f9fa;
+    text-decoration: underline;
+  }
+  
+  .footer {
+    background: rgba(74, 73, 73, 0.6);
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .footer a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .hero-section {
+    text-align: center;
+    padding: 80px 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    margin: 50px auto;
+    max-width: 50%;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-section p {
+    font-size: 1.5rem;
+    color: #f8f9fa;
+  }
+  
+  .container {
+    margin-top: 30px;
+  
+  }
+  
+  .card {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    max-width: 100%;
+    padding: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  h4 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #343a40;
+  }
+  

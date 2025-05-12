@@ -1,0 +1,56 @@
+<div class="customer-dashboard">
+  <header class="dashboard-header">
+    <h1>Welcome to Your Dashboard</h1>
+  </header>
+
+  <!-- Browse Tablets Section -->
+  <div class="product-section">
+    <h2>Browse Tablets</h2>
+    <table class="product-table">
+      <thead>
+        <tr>
+          <th>Tablet Name</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of products">
+          <td>{{ product.name }}</td>
+          <td>{{ product.description }}</td>
+          <td>{{ product.price | currency:'INR':'symbol' }}</td>
+          <td>
+            <button (click)="addToCart(product)" class="btn add-to-cart-btn">Add to Cart</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Cart Section -->
+  <div class="cart-section" *ngIf="cart.length > 0">
+    <h2>Your Cart</h2>
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>Product Name</th>
+          <th>Price</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of cart">
+          <td>{{ item.name }}</td>
+          <td>{{ item.price | currency:'INR':'symbol' }}</td>
+          <td>{{ item.quantity }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+    <div class="cart-total">
+      <p>Total: {{ getTotal() | currency:'INR':'symbol' }}</p>
+    </div>
+    <button (click)="placeOrder()" class="btn place-order-btn">Place Order</button>
+  </div>
+</div>

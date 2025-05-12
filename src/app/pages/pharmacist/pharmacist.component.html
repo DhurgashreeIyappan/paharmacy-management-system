@@ -1,0 +1,17 @@
+<div class="pharmacist-dashboard container mt-4">
+  <h2>All Orders</h2>
+  <div *ngFor="let order of orders" class="card my-3 p-3">
+    <p><strong>User Email:</strong> {{ order.userEmail }}</p>
+    <p><strong>Order Date:</strong> {{ order.orderDate | date:'medium' }}</p>
+    <p><strong>Total Amount:</strong> ₹{{ order.totalAmount }}</p>
+
+    <div *ngIf="order.products?.length > 0">
+      <h5>Products:</h5>
+      <ul>
+        <li *ngFor="let product of order.products">
+          {{ product.productName }} (x{{ product.quantity }}) - ₹{{ product.price }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
